@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IFRAMED Before&amp;After</title>
+	<style type="text/css">
+	iframe, button{ margin:200px auto 0 auto; display: block; }
+	button{ width: 200px; height: 60px; font-weight: bold; display: none;}
+	</style>
+</head>
+<body>
+<iframe id="component" src="v_0_1_2/index.html" width="733" height="50" ></iframe>
+<script>
+
+// query iframe
+var iframe = document.querySelector("#component");
+
+// when iframe is ready
+function init(){
+
+	// load/reload component
+	iframe.contentWindow.APP.load(); 
+}
+
+
+iframe.addEventListener("load", init);
+</script>
+</body>
+</html>

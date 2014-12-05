@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voting booth</title>
+	<meta content="True" name="HandheldFriendly"/>
+	<meta content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+<div id="main">
+	<section class="slide pure-g" id="buttonGroup"></section>
+	<section class="slide pure-g" id="resultSlide"></section>
+</div>
+<section id="loadingOverlay" class="render on"></section>
+<script src="config.js"></script>
+<script src="js/script.min.js"></script>
+<!-- to init the component -->
+<script>
+	
+	// call the APP.load() method
+	window.addEventListener("load", function(){
+		APP.load();
+	});
+
+</script>
+</body>
+</html>
